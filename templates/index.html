@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Spam Detection</title>
+    <style>
+        body {
+            background-image: url("static/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red; /* Changed color to red */
+            font-size: 40px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #333;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-box:focus {
+            border-color: #777;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: black;">SMS Spam Detection</h1> <!-- Added inline style for red color -->
+        <form action="/detect-spam" method="post">
+            <input type="text" name="message" placeholder="Enter a message" class="input-box" style="height: 150px;">
+            <button type="submit" class="submit-button">Detect Spam</button>
+        </form>
+    </div>
+</body>
+</html>
+
